@@ -1,2 +1,3 @@
 # GongYuqing.github.io
- Set up git hub web repository for my website publishing
+ Set up github web repository for my website publishing
+Assignment1 has been uploaded.
