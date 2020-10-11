@@ -14,8 +14,8 @@
     #score {
         background-color: #ffeadb;
         width: 60%;
-        margin: auto;
-        height: 300px;
+        margin: 0 auto;
+        height: 350px;
         border-color: cadetblue;
     }
     .title {
@@ -24,8 +24,7 @@
         color: #637373;
     }
     
-    form#calculator #submitBtn {
-            margin-left:58px;
+    #calculator #submitBtn {
             margin-top: 10px;
             padding:5px 5px;
             border: #637373 solid 1.5px;
@@ -33,8 +32,7 @@
             font-weight: bold;
         }
 
-    form#calculator #submitBtn:hover {
-            margin-left:58px;
+    #calculator #submitBtn:hover {
             margin-top: 10px;
             padding:5px 5px;
             border: #637373 solid 1.5px;
@@ -43,25 +41,31 @@
             font-weight: bold;
             cursor: pointer;
         }
+    #calculator {
+        margin: 0 auto;
+    }
     .form-group {
        margin-left: 300px;
        color: #637373;
        font-weight: bold;    
     } 
     .form-group label {
-            display:block;
+       display:block;
         }
     .form-group input {
        border: #637373 solid 1.5px;
        margin-top: 5px;
        padding-top: 5px;
         }
+    .button {
+       text-align: center;
+    }
     </style>
 </head>
 <body>
     <div id='score'>
         <h2 class="title">Total Score Calculator</h2>
-        <form id="calculator">
+        <div id="calculator">
             <div class='form-group'>
                 <label>User Name:</label>
                 <input type='text' name='username'>
@@ -76,9 +80,10 @@
             <label>English:</label>
             <input type='number' name='english'>
             <br>
-            
+            </div>
+            <div class="button">
             <button id='submitBtn' type='submit'>Send</button>
-        </form>
+            </div>
     </div>
     </div>
 
