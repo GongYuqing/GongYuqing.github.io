@@ -24,7 +24,7 @@
         color: #637373;
     }
     
-    #calculator #submitBtn {
+    form#calculator #submitBtn {
             margin-top: 10px;
             padding:5px 5px;
             border: #637373 solid 1.5px;
@@ -32,7 +32,7 @@
             font-weight: bold;
         }
 
-    #calculator #submitBtn:hover {
+    form#calculator #submitBtn:hover {
             margin-top: 10px;
             padding:5px 5px;
             border: #637373 solid 1.5px;
@@ -65,7 +65,7 @@
 <body>
     <div id='score'>
         <h2 class="title">Total Score Calculator</h2>
-        <div id="calculator">
+        <form id="calculator">
             <div class='form-group'>
                 <label>User Name:</label>
                 <input type='text' name='username'>
@@ -84,7 +84,7 @@
             <div class="button">
             <button id='submitBtn' type='submit'>Send</button>
             </div>
-    </div>
+        </form>
     </div>
 
     <script>
