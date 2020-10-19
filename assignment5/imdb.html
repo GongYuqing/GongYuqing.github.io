@@ -1,0 +1,225 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>IMDb-Ranking</title>
+      <style>a{ text-decoration:none}</style>
+
+      
+   </head>
+   <style>
+       html, body {
+           
+           padding: 0;
+           margin: 0;
+           background-image: url(images/背景图4.jpg);
+       }
+       .tip {
+           text-align: center;
+           color: ivory;
+           font-family: AR BLANCA;
+           font-size: 80px;
+       }
+       .first {
+           background-color: ivory;
+           color: ivory;
+           width: 500px;
+           text-align: center;
+           margin: 0 auto;
+           border-radius: 30px;
+       }
+       .first ul li {
+           display: inline-block;
+           margin-right: 20px;
+           margin-top: 0px;
+       }
+       .whole{
+           width: 90%;
+           margin: 0 auto;
+       }
+       .two {
+        text-align: center; 
+        color: ivory; 
+        font-size: 50px;
+       }
+       .a{
+           overflow:hidden;
+           width: 90%;
+           margin: auto;
+       }
+       .a ul li{
+           width:135px;
+           float:left;
+           margin:15px 24px 15px 24px;
+           position:relative;
+           overflow:hidden;
+           cursor:pointer;
+        }
+       .a .txt{
+           width:135px;
+           height:45px; 
+           background:url(images/1px.png) repeat;
+           position:absolute;
+           left:0;bottom:0;
+           color:#fff;font-family:"微软雅黑";
+        }
+       .a .txt h3{
+           font-size:20px;
+           font-weight:100;
+           height:20px;
+           text-align:center;
+           line-height:20px;
+        }
+       .a .txt p{
+           font-size:14px;
+           text-align:center;
+        }
+        .rank {    
+          width: 200px;
+          line-height: 27px;
+          cursor: pointer;
+          font-size: 20px;
+          border: solid 2px #394867;
+          background-color: #f1f6f9;
+          border-radius: 30px;
+          text-align: center;
+          margin: 0 auto;
+          margin-top: 20px;
+          } 
+        .c {
+            text-align: center;
+        }
+        .c img{
+          
+          height: 150px;
+          margin: 30px 60px 20px 60px;
+        }
+        nav {
+    color: ivory;
+    border: solid 2px #394867;
+    background-color: #445ac0;
+    border-radius: 30px;
+    width: 200px;
+	height: 30px; 
+	font-size: 20px; 
+    font-family: AR BLANCA;
+   
+}
+nav ul{
+	margin:  0px;
+	padding: 0px 0px 5px 30px;
+	}
+	
+nav li {
+
+	margin-right: 25px;
+}
+.b1 {
+	color: #18BEEE;
+}
+
+.b {
+    
+    width: 200px;
+}
+nav li a {
+    color: #ffffff;
+}
+nav li a:hover {
+	color:#d1a220;
+}
+.b nav>ul>li {
+	float: left;
+}
+section nav ul ul{
+	font-size: 15px;
+	margin: 0px;
+	opacity: 0;
+	position: absolute;
+	z-index: 3;
+
+}
+.kim ul li:hover ul {
+	opacity: 1;
+}
+#country {
+     margin-top: 40px;
+}
+#language {
+    margin-top: 30px;
+}
+.last {
+    font-size: 15px;
+    text-align: center;
+    color: ivory;
+    margin-top: 10px;
+}
+   </style>
+   <body>
+    <h1 class="tip">Movies make life more wonderful!</h1>
+    <div class="first">
+        <ul><li><a href="" >HOME</a></li>
+            <li><a href="#top100" target="_blank">IMDb TOP100</a></li>
+            <li><a href="#category" target="_blank">CATEGORY</a></li>
+            <li><a href="">ABOUT US</a></li>
+        </ul>
+  </div>
+ 
+    <div class="whole">
+    <div class="two">IMDb TOP5</div>
+    <div class="a">
+        <ul>
+            <li><img src="images/1.jpg" alt="" width="135" height="200" /><div class="txt"><h3>Top 1</h3><p>肖申克的救赎</p></div></li>
+            <li><img src="images/2.jpg" alt="" width="135" height="200"/><div class="txt"><h3>TOP 2</h3><p>蝙蝠侠：黑暗骑士</p></div></li>
+            <li><img src="images/3.jpg" alt="" width="135" height="200"/><div class="txt"><h3>TOP 3</h3><p>搏击俱乐部</p></div></li>
+            <li><img src="images/4.jpg" alt="" width="135" height="200" /><div class="txt"><h3>TOP 4</h3><p>低俗小说</p></div></li>
+            <li><img src="images/5.jpg" alt="" width="135" height="200"/><div class="txt"><h3>TOP 5</h3><p>阿甘正传</p></div></li>
+        </ul>
+    </div>
+    <script src="http://www.lanrenzhijia.com/ajaxjs/jquery.min.js"></script>
+    <script>
+    $(".a ul li").hover(function(){
+        $(this).find(".txt").stop().animate({height:"198px"},400);
+        $(this).find(".txt h3").stop().animate({paddingTop:"60px"},400);
+    },function(){
+        $(this).find(".txt").stop().animate({height:"45px"},400);
+        $(this).find(".txt h3").stop().animate({paddingTop:"0px"},400);
+    })
+    </script>
+     <div id="category">
+     <div class="rank"><a href="ranking.html">View TOP100</a></div>
+     <div id="top100">
+        <iframe class="airtable-embed" src="https://airtable.com/embed/shrHTd3Gl3wYVdyLu?backgroundColor=teal&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc; margin-top: 80px;"></iframe>
+     </div>
+     <div style="color:ivory; font-size: 50px; text-align: center; margin-top: 30px; font-family: AR BLANCA;">Find a high score movie!</div>
+     <div style="background-color: ivory; margin-top: 20px;">
+     <iframe title="IMDb SCORE" aria-label="Stacked Bars" id="datawrapper-chart-NTExh" src="https://datawrapper.dwcdn.net/NTExh/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="2496"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"])for(var e in a.data["datawrapper-height"]){var t=document.getElementById("datawrapper-chart-"+e)||document.querySelector("iframe[src*='"+e+"']");t&&(t.style.height=a.data["datawrapper-height"][e]+"px")}}))}();
+     </script>
+     </div>
+     <div style="color:ivory; font-size: 50px; text-align: center; margin-top: 30px; font-family: AR BLANCA;">Pick your movie!</div>
+    <div class="c">
+        <img src="images/评分.png">
+        <img src="images/地区.png">
+        <img src="images/语言.png">
+    </div>
+    </div>
+    <section class="b">
+        <nav class="kim">
+          <ul>
+              <li><a href="" class="b2">请选择分类方式</a>
+                  <ul class="b2-1">
+                     <li><a href="#country" target="_blank">按制片国家/地区分类</a></li>
+                     <li><a href="#language" target="_blank">按语言分类</a></li>
+                  </ul>
+                </li>            
+          </ul>
+        </nav>
+    </section>
+    <div id="country"><iframe class="airtable-embed" src="https://airtable.com/embed/shrVBCA5gslcUGhca?backgroundColor=teal&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe></div>
+    <div id="language"><iframe class="airtable-embed" src="https://airtable.com/embed/shrib0USPcU0t98H3?backgroundColor=teal&viewControls=on" frameborder="0" onmousewheel="" width="100%" height="533" style="background: transparent; border: 1px solid #ccc;"></iframe></div>
+<div class="last">
+    <footer>Copyright © GONG Yuqing</footer>
+</div>
+    </body>
+</html>
